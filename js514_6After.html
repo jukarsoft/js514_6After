@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+		<meta lang="es">
+		<meta name="description" content="Resumen del contenido"> 
+		<meta name="description" content="Free Web tutorials">
+  		<meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  		<meta name="author" content="Juan Carlos">
+	<title>buscar y borrar nodos -  removeChild</title>
+	<style type="text/css">
+		div {
+			background-color: yellow;
+			width: 200px;
+			height: 50px;
+			text-align: center;
+		}
+	</style>
+	<!-- libreria JQuery-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script>
+		function nuevoBoton() {
+		var nuevoNodo= document.createElement("button");
+		nuevoNodo.innerText='Nuevo botón'
+		var parent= document.getElementById('capa')
+		parent.insertAdjacentElement('afterend', nuevoNodo);
+}
+</script>
+	<body>
+		<main>
+			<div id="capa">
+				<a href='#' onclick="nuevoBoton()">Pulsa en este enlace</a>
+			</div>
+		</main>
+	</body>
+</html>
